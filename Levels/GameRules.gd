@@ -1,8 +1,8 @@
 extends Node2D
 
 func _ready():
-	Globals.lives = 3
-	Globals.coins = 100
+	Globals.lives = 5
+	Globals.coins = 0
 	get_tree().call_group("GUI", "add_lives", Globals.lives)
 
 func hurt():

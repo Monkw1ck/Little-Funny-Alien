@@ -8,6 +8,10 @@ script/source = "extends Node2D
 var speed = 200
 
 func _ready():
+	if Globals.fly_moving == \"left\":
+		speed = 200
+	elif Globals.fly_moving == \"right\":
+		speed = -200
 	set_as_toplevel(true)
 	global_position = get_parent().global_position
 
